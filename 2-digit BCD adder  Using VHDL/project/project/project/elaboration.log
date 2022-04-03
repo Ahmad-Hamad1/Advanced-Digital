@@ -1,0 +1,47 @@
+Active-HDL 11.1.262.7351 2021-04-22 13:22:14
+
+Elaboration top modules:
+Architecture                  arc(test_bench)
+
+
+-------------------------------------------------------------------------------------------------
+Entity           | Architecture | Library | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------
+test_bench       | arc          | project |      | 11.1.262.7351 (Windows) | -O3
+full_system      | ripple       | project |      | 11.1.262.7351 (Windows) | -O3
+result_analyzer  | arc          | project |      | 11.1.262.7351 (Windows) | -O3
+register_8_bit   | arc          | project |      | 11.1.262.7351 (Windows) | -O3
+two_bit_bcd      | ripple       | project |      | 11.1.262.7351 (Windows) | -O3
+register_9_bit   | arc          | project |      | 11.1.262.7351 (Windows) | -O3
+bcd_adder_onebit | ripple       | project |      | 11.1.262.7351 (Windows) | -O3
+four_bit_adder   | arc          | project |      | 11.1.262.7351 (Windows) | -O3
+and2             | arc          | project |      | 11.1.262.7351 (Windows) | -O3
+or3              | arc          | project |      | 11.1.262.7351 (Windows) | -O3
+full_adder       | arc          | project |      | 11.1.262.7351 (Windows) | -O3
+xor2             | arc          | project |      | 11.1.262.7351 (Windows) | -O3
+or2              | arc          | project |      | 11.1.262.7351 (Windows) | -O3
+-------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+VHDL Package                    | Library | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------
+standard                        | std     |      |                         | <unavailable>
+TEXTIO                          | std     |      |                         | <unavailable>
+std_logic_1164                  | ieee    |      |                         | <unavailable>
+std_logic_arith                 | ieee    |      |                         | <unavailable>
+STD_LOGIC_UNSIGNED              | ieee    |      |                         | <unavailable>
+-------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+Library                         | Comment
+-------------------------------------------------------------------------------------------------
+ieee                            | Standard IEEE packages library
+project                         | None
+std                             | Standard VHDL library
+-------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+test_bench test_bench arc
+
+
+The performance of simulation is reduced. Version Student Edition

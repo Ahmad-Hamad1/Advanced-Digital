@@ -1,0 +1,83 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+acom -O3 -e 100 -work project -2002  $dsn/src/system.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/university/third-year/first-semester/Advanced-digital/project/project/project/src/system.vhd
+# Compile Entity "and2"
+# Compile Architecture "arc" of Entity "and2"
+# Compile Entity "or2"
+# Compile Architecture "arc" of Entity "or2"
+# Compile Entity "xor2"
+# Compile Architecture "arc" of Entity "xor2"
+# Compile Entity "and3"
+# Compile Architecture "arc" of Entity "and3"
+# Compile Entity "and4"
+# Compile Architecture "arc" of Entity "and4"
+# Compile Entity "or3"
+# Compile Architecture "arc" of Entity "or3"
+# Compile Entity "or4"
+# Compile Architecture "arc" of Entity "or4"
+# Compile Entity "full_adder"
+# Compile Architecture "arc" of Entity "full_adder"
+# Compile Entity "four_bit_adder"
+# Compile Architecture "arc" of Entity "four_bit_adder"
+# Compile Entity "carry_generator"
+# Compile Architecture "arc" of Entity "carry_generator"
+# Compile Entity "adder_look_ahead_4bit"
+# Compile Architecture "arc" of Entity "adder_look_ahead_4bit"
+# Compile Entity "bcd_adder_onebit"
+# Compile Architecture "ripple" of Entity "bcd_adder_onebit"
+# Compile Architecture "look_ahead" of Entity "bcd_adder_onebit"
+# Compile Entity "two_bit_bcd"
+# Compile Architecture "ripple" of Entity "two_bit_bcd"
+# Compile Entity "two_bit_bcd"
+# Compile Architecture "look_ahead" of Entity "two_bit_bcd"
+# Compile Entity "register_8_bit"
+# Compile Architecture "arc" of Entity "register_8_bit"
+# Compile Entity "register_9_bit"
+# Compile Architecture "arc" of Entity "register_9_bit"
+# Compile Entity "result_analyzer"
+# Compile Architecture "arc" of Entity "result_analyzer"
+# Compile Entity "full_system"
+# Compile Architecture "ripple" of Entity "full_system"
+# Compile Architecture "look_ahead" of Entity "full_system"
+# Compile Entity "test_bench"
+# Compile Architecture "arc" of Entity "test_bench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+test_bench test_bench arc
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7223 kB (elbread=1281 elab2=5800 kernel=141 sdf=0)
+# KERNEL: ASDB file was created in location C:\university\third-year\first-semester\Advanced-digital\project\project\project\src\wave.asdb
+#  1:22 PM, Thursday, April 22, 2021
+#  Simulation has been initialized
+# add wave -noreg {/test_bench/a}
+# add wave -noreg {/test_bench/b}
+# add wave -noreg {/test_bench/ans}
+# add wave -noreg {/test_bench/correct_result}
+# add wave -noreg {/test_bench/clk}
+# add wave -noreg {/test_bench/clk2}
+# add wave -noreg {/test_bench/reset}
+# 7 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/university/third-year/first-semester/Advanced-digital/project/project/project/src/wave.asdb'.
+run 5000000 ns
+# KERNEL: stopped at time: 5 ms
